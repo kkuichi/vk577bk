@@ -5,13 +5,14 @@ from sklearn.experimental import enable_iterative_imputer  # noqa: F401
 from sklearn.impute import IterativeImputer
 from sklearn.ensemble import RandomForestRegressor
 
-files = [
-    r"C:\Users\veron\Documents\tuke\Ing.studium\Diplomová práca\data pre programovanie\VEGA_dáta z 13-11-2024-prog\spracovane_Pavol-Almasi-prog\1. vlna imputation.xlsx",
-    r"C:\Users\veron\Documents\tuke\Ing.studium\Diplomová práca\data pre programovanie\VEGA_dáta z 13-11-2024-prog\spracovane_Pavol-Almasi-prog\2. vlna imputation.xlsx",
-    r"C:\Users\veron\Documents\tuke\Ing.studium\Diplomová práca\data pre programovanie\VEGA_dáta z 13-11-2024-prog\spracovane_Pavol-Almasi-prog\3. vlna imputation.xlsx",
-    r"C:\Users\veron\Documents\tuke\Ing.studium\Diplomová práca\data pre programovanie\VEGA_dáta z 13-11-2024-prog\spracovane_Pavol-Almasi-prog\4. vlna imputation.xlsx",
-]
+DATA_DIR = Path("../data")
 
+files = [
+    DATA_DIR / "1_vlna.xlsx",
+    DATA_DIR / "2_vlna.xlsx",
+    DATA_DIR / "3_vlna.xlsx",
+    DATA_DIR / "4_vlna.xlsx",
+]
 # STĹPCE PRE MISSFOREST (8–25 % missing)
 
 missforest_cols = [
