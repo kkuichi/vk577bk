@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-ExtraTrees + XAI (SHAP, LIME, DALEX BreakDown, Anchor, DiCE) + metriky vysvetlení.
+ExtraTrees + XAI (SHAP, LIME, DALEX BreakDown, Anchor,pdp) + metriky vysvetlení.
 """
 
 import time
@@ -63,7 +63,7 @@ RUN_SINGLE_PATIENT_DEMO = False
 RUN_LIME_SANITY_CHECK = False
 
 # 1. NAČÍTANIE DÁT + TRÉNING EXTRATREES
-PATH = r"C:\Users\veron\Documents\tuke\Ing.studium\Diplomová práca\data pre programovanie\VEGA_dáta z 13-11-2024-prog\spracovane_Pavol-Almasi-prog\1. vlna imputation.xlsx"
+PATH = "../data.xlsx"
 TARGET = "Závažnosť priebehu ochorenia"
 
 df = pd.read_excel(PATH)
