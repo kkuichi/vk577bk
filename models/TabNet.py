@@ -54,7 +54,7 @@ warnings.filterwarnings("ignore", category=FutureWarning, module="dalex")
 # 0) KONFIG
 # =========================================================
 
-PATH = r"C:\Users\veron\Documents\tuke\Ing.studium\Diplomová práca\data pre programovanie\VEGA_dáta z 13-11-2024-prog\spracovane_Pavol-Almasi-prog\1. vlna imputation.xlsx"
+PATH = "../data.xlsx"
 TARGET = "Závažnosť priebehu ochorenia"
 
 FAST_MODE = True
