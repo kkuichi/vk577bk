@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-XGBoost + XAI (SHAP, LIME, DALEX BreakDown, Anchor, DiCE) + metriky vysvetlení.
+XGBoost + XAI (SHAP, LIME, DALEX BreakDown, Anchor, PDP) + metriky vysvetlení.
 
 Poznámky k výkonu:
 - Niektoré metriky (completeness/necessity/sufficiency/monotonicity/trendability) sú perturbation-based a pri 184 featurách vedia byť veľmi pomalé.
@@ -67,7 +67,7 @@ RUN_LIME_SANITY_CHECK = False
 
 # 1. NAČÍTANIE DÁT + TRÉNING XGBOOST
 
-PATH = r"C:\Users\veron\Documents\tuke\Ing.studium\Diplomová práca\data pre programovanie\VEGA_dáta z 13-11-2024-prog\spracovane_Pavol-Almasi-prog\1. vlna imputation.xlsx"
+PATH = "../data.xlsx"
 TARGET = "Závažnosť priebehu ochorenia"
 
 df = pd.read_excel(PATH)
