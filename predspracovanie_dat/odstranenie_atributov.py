@@ -1,10 +1,12 @@
 import pandas as pd
 
+DATA_DIR = Path("../data")
+
 files = [
-    #r"C:\Users\veron\Documents\tuke\Ing.studium\Diplomová práca\data pre programovanie\VEGA_dáta z 13-11-2024-prog\spracovane_Pavol-Almasi-prog\1. vlna všetko 28-11-2024.xlsx",
-    #r"C:\Users\veron\Documents\tuke\Ing.studium\Diplomová práca\data pre programovanie\VEGA_dáta z 13-11-2024-prog\spracovane_Pavol-Almasi-prog\2. vlna všetko 28-11-2024.xlsx",
-    #r"C:\Users\veron\Documents\tuke\Ing.studium\Diplomová práca\data pre programovanie\VEGA_dáta z 13-11-2024-prog\spracovane_Pavol-Almasi-prog\3. vlna všetko 28-11-2024.xlsx",
-    r"C:\Users\veron\Documents\tuke\Ing.studium\Diplomová práca\data pre programovanie\VEGA_dáta z 13-11-2024-prog\spracovane_Pavol-Almasi-prog\4. vlna všetko 28-11-2024.xlsx",
+    #DATA_DIR / "1_vlna.xlsx",
+    #DATA_DIR / "2_vlna.xlsx",
+    #DATA_DIR / "3_vlna.xlsx",
+    DATA_DIR / "4_vlna.xlsx",
 ]
 
 # Definícia stĺpcov na odstránenie
