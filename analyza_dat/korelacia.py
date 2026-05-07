@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-path = r"C:\Users\veron\Documents\tuke\Ing.studium\Diplomová práca\data\VEGA_dáta z 13-11-2024\spracovane_Pavol-Almasi\3. vlna všetko 28-11-2024.xlsx"
+path = "../data/4_vlna.xlsx"
 df = pd.read_excel(path)
 
 # numerické stĺpce
