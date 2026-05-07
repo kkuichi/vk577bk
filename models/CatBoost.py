@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-CatBoost + XAI (SHAP, LIME, DALEX BreakDown, Anchor, DiCE) + metriky vysvetlení.
+CatBoost + XAI (SHAP, LIME, DALEX BreakDown, Anchor) + metriky vysvetlení.
 
 Poznámky k výkonu:
 - Niektoré metriky (completeness/necessity/sufficiency/monotonicity/trendability) sú perturbation-based a pri 184 featurách vedia byť veľmi pomalé.
@@ -74,7 +74,7 @@ RUN_SINGLE_PATIENT_DEMO = False   # grafy a detailný výpis jedného pacienta
 
 # 1. NAČÍTANIE DÁT + TRÉNING CATBOOST
 
-PATH = r"C:\Users\veron\Documents\tuke\Ing.studium\Diplomová práca\data pre programovanie\VEGA_dáta z 13-11-2024-prog\spracovane_Pavol-Almasi-prog\1. vlna imputation.xlsx"
+PATH = "../data.xlsx"
 TARGET = "Závažnosť priebehu ochorenia"
 
 df = pd.read_excel(PATH)
