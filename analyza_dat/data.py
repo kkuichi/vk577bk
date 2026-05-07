@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 
 
 #1.vlna
-df = pd.read_excel("spracovane_Pavol-Almasi/1. vlna všetko 28-11-2024.xlsx")
+df = pd.read_excel(".../1. vlna.xlsx")
 
 # Prvých 5 riadkov
 #print(df.head())
