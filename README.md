@@ -95,3 +95,36 @@ Repozitár obsahuje aj implementáciu viacerých technických metrík kvality vy
 
 
 # Štruktúra repozitára
+
+
+
+```text
+vk577bk-main/
+│
+├── README.md
+│
+├── analyza_dat/
+│   ├── chyb_hod.py
+│   ├── data.py
+│   ├── korelacia.py
+│   └── vsetky_chyb_hod.py
+│
+├── predspracovanie_dat/
+│   ├── convert_binary.py
+│   ├── imputation_indikator.py
+│   ├── imputation_missforest_MICE.py
+│   ├── odstranenie_atributov.py
+│   ├── odstranenie_atributov3.py
+│   ├── odstranenie_atributov_2.py
+│   └── odstranenie_riadkov.py
+│
+└── models/
+    ├── CatBoost.py
+    ├── ExtraTrees.py
+    ├── LightGBM.py
+    ├── TabNet.py
+    ├── XGBoost.py
+    ├── XGBoost_xai_multi_patient_eval.py
+    ├── catboost_multi_patient_eval.py
+    ├── extratrees_multi_patient_eval.py
+    └── lightgbm_multi_patient_eval.py
